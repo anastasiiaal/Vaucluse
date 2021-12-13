@@ -649,7 +649,8 @@ footer {
     }
     
 
-    .menu .lang a, .menu .lang span {
+    .menu .lang a, .menu .lang span,
+    .menu .lang a.active {
         color: #533860;
         font-size: 18px;
     }
