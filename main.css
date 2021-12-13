@@ -93,6 +93,19 @@ ul {
     backdrop-filter: blur(10px);
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
 .menu {
     justify-content: space-between;
     align-items: center;
@@ -127,6 +140,7 @@ ul {
     width: 100%;
 }
 
+
 .menu nav > ul > li > a:hover,
 .menu .lang > a:hover {
     color: #F6E014;
@@ -136,18 +150,28 @@ ul {
     width: 100%;
 }
 
+.menu .lang {
+    align-items: center;
+}
+
 .menu .lang > a,
 .menu .lang span {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #fff;
 }
 
+.menu .lang span {
+    margin: 0 5px;
+}
+
 .menu .lang > a.active {
     font-weight: 700;
+    font-size: 14px;
 }
 
 .burger {
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 24px;
@@ -450,6 +474,10 @@ footer {
     display: none;
 }
 
+.active {
+    display: block;
+}
+
 
 
 /*______________ M E D I A _ Q U E R I E S _____________*/
@@ -634,6 +662,10 @@ footer {
         flex-direction: column;
     }
 
+    .menu .nav {
+        z-index: 1500;
+    }
+
     .menu .nav > ul {
         background-color: #ffffff;
         width: 320px;
@@ -642,6 +674,7 @@ footer {
         padding-top: 120px;
         padding-left: 30px;
         box-shadow: -5px 5px 17px -4px rgba(39, 13, 52, 0.3);
+        z-index: 2000;
     }
 
     .menu .nav > ul > li > a {
@@ -659,6 +692,11 @@ footer {
         position: absolute;
         top: 30px;
         right: 25px;
+    }
+
+    .menu .lang, .menu .lang a,
+    .menu img.cross {
+        z-index: 4000;
     }
 
     .menu .lang, 
@@ -726,6 +764,10 @@ footer {
 
 
     /* index.html */
+
+    .offer__text > a#overlayed {
+        z-index: 0 !important;
+    }
 
     .offer__text h1 span {
         font-size: 42px;

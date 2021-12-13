@@ -1,13 +1,35 @@
-// const testBtn = document.getElementById('test-btn');
-// const testDots = document.getElementById('test-dots');
-// const testPar = document.getElementById('test-p');
+//*** burger mobile ***//
 
-// testBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     testDots.classList.toggle('hidden');
-//     testPar.classList.toggle('hidden');
-// });
+const burger = document.getElementById('burger');
+const cross = document.getElementById('cross');
+const nav = document.getElementById('navigation');
+const lang = document.getElementById('lang');
+const overlay = document.getElementById('overlay');
 
+burger.addEventListener('click', () => {
+    nav.style.display = 'flex';
+    lang.style.display = 'flex';
+    cross.style.display = 'flex';
+    overlay.style.display = 'block';
+})
+
+const close = () => {
+    nav.style.display = 'none';
+    lang.style.display = 'none';
+    cross.style.display = 'none';
+    overlay.style.display = 'none';
+};
+
+cross.addEventListener('click', () => {
+    close();
+});
+overlay.addEventListener('click', () => {
+    close();
+});
+
+
+
+//*** actualites.html > read more button ***//
 
 const readmoreBtn = document.querySelectorAll('.readmore');
 const hidetextBtn = document.querySelectorAll('.hidetext');
@@ -43,6 +65,48 @@ for (let i = 0; i < hidetextBtn.length; i++) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const testBtn = document.getElementById('test-btn');
+// const testDots = document.getElementById('test-dots');
+// const testPar = document.getElementById('test-p');
+
+// testBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     testDots.classList.toggle('hidden');
+//     testPar.classList.toggle('hidden');
+// });
+
+
+
 // readmoreBtn.forEach(e => {
 //     e.addEventListener
 // })
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="lieux__cover">
+        <div id="overlay"></div>
         <header id="header">
             <div class="container">
                 <div class="menu d-flex">
@@ -21,7 +22,7 @@
                         </a>
                     </figure>
                     <nav class="nav">
-                        <ul class="d-flex">
+                        <ul class="d-flex" id="navigation">
                             <li>
                                 <a href="index.html">Accueil</a>
                             </li>
@@ -36,10 +37,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="lang">
-                        <a href="#" class="active">FR</a> <span>/</span> <a href="#">EN</a>
+                    <div class="lang d-flex" id="lang">
+                        <a href="#" class="active">FR</a> <span>/</span> <a href="en.lieux.html">EN</a>
                     </div>
-                    <div class="burger d-flex hidden" id="burger">
+                    <div class="burger hidden" id="burger">
                         <div class="burger__layer"></div>
                         <div class="burger__layer"></div>
                         <div class="burger__layer"></div>
@@ -161,9 +162,10 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#">English version</a>
+                <a href="en.lieux.html">English version</a>
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="actu__cover">
+        <div id="overlay"></div>
         <header id="header">
             <div class="container">
                 <div class="menu d-flex">
@@ -21,7 +22,7 @@
                         </a>
                     </figure>
                     <nav class="nav">
-                        <ul class="d-flex">
+                        <ul class="d-flex" id="navigation">
                             <li>
                                 <a href="index.html">Accueil</a>
                             </li>
@@ -36,10 +37,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="lang">
-                        <a href="#" class="active">FR</a> <span>/</span> <a href="#">EN</a>
+                    <div class="lang d-flex" id="lang">
+                        <a href="#" class="active">FR</a> <span>/</span> <a href="en.actualites.html">EN</a>
                     </div>
-                    <div class="burger d-flex hidden" id="burger">
+                    <div class="burger hidden" id="burger">
                         <div class="burger__layer"></div>
                         <div class="burger__layer"></div>
                         <div class="burger__layer"></div>
@@ -74,7 +75,7 @@
                         <img src="img/actu02.jpg" alt="L'Isle-sur-la-Sorgue - Facture d'eau démesurée">
                         <div class="actualites__text">
                             <h4>L'Isle-sur-la-Sorgue - Facture d'eau démesurée</h4>
-                            <p class="light">1991 euros. C'est le montant de la facture reçue par Paul Gribbell, un habitant de L'Isle-sur-la Sorgue, pour une consommation annuelle d'eau non potable estimée --par le compteur-- à 10 600 m3.Sauf que ce riverain du canal, géré par l'Asco (Association syndicale constituée d'office du canal de l'Isle), n'arrose sur cette période-là, qu'environ 600 m2 de ses terrains avec l'eau du canal. Le montant interpelle Paul Gribbell qui a fait de cette résidence secondaire acquise en 2009, sa résidence principale en 2017.<span class="dots"> ...</span><span class="light p-hidden hidden"> "Depuis que nous sommes là à plein temps, j'utilise environ 600m3 d'eau par an et je payais jusque-là environ 350€ à l'année, précise le propriétaire du mas situé en pleine campagne l'isloise. Cela ne me gêne pas de payer, je pourrais le faire.</span></p>
+                            <p class="light">1991 euros. C'est le montant de la facture reçue par Paul Gribbell, un habitant de L'Isle-sur-la Sorgue, pour une consommation annuelle d'eau non potable estimée --par le compteur-- à 10 600 m3.Sauf que ce riverain du canal, géré par l'Asco (Association syndicale constituée d'office du canal de l'Isle), n'arrose sur cette période-là, qu'environ 600 m2 de ses terrains avec l'eau du canal. Le montant interpelle Paul Gribbell qui a fait de cette résidence secondaire acquise en 2009, sa résidence principale en 2017.<span class="dots"> ...</span><span class="light p-hidden hidden"> "Depuis que nous sommes là à plein temps, j'utilise environ 600m3 d'eau par an et je payais jusque-là environ 350€ à l'année, précise le propriétaire du mas situé en pleine campagne l'isloise. Cela ne me gêne pas de payer, je pourrais le faire."</span></p>
                             <a href="#" class="arrow readmore">Lire la suite</a>
                             <a href="#" class="arrow hidetext hidden">Cacher la suite</a>
                         </div>
@@ -144,7 +145,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#">English version</a>
+                <a href="en.actualites.html">English version</a>
             </div>
         </div>
     </footer>
