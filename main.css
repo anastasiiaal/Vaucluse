@@ -262,8 +262,7 @@ footer {
 
 .offer__text a {
     padding: 18px 53px;
-    background-color: #ffffff99;
-    backdrop-filter: blur(10px);
+    background-color: #ffffffbb;
     color: #270D34;
     text-transform: uppercase;
     font-size: 14px;
@@ -275,7 +274,7 @@ footer {
 }
 
 .offer__text a:hover {
-    background-color: #ffffffcc;
+    background-color: #ffffffdd;
     box-shadow: 0px 0px 12px -2px #ffffff80;
 }
 
@@ -780,10 +779,6 @@ footer {
 
 
     /* index.html */
-
-    .offer__text > a#overlayed {
-        z-index: 0 !important;
-    }
 
     .offer__text h1 span {
         font-size: 42px;
