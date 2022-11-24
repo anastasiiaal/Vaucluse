@@ -32,9 +32,9 @@
                 </ul>
             </nav>
             <div class="lang d-flex" id="lang">
-                <a href="index.php" class="<?= ($eng === 1) ? '' : 'active' ?>">FR</a>
+                <a href="<?= $pageName ?>" class="<?= ($eng === 1) ? '' : 'active' ?>">FR</a>
                 <span>/</span>
-                <a href="index.php?eng" class="<?= ($eng === 1) ? 'active' : '' ?>">EN</a>
+                <a href="<?= $pageName ?>?eng" class="<?= ($eng === 1) ? 'active' : '' ?>">EN</a>
             </div>
             <div class="burger hidden" id="burger">
                 <div class="burger__layer"></div>

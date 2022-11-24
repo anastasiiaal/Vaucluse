@@ -32,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="<?= ($eng === 1) ? 'index.php' : 'index.php?eng' ?>"><?= ($eng === 1) ? 'Version française' : 'English version' ?></a>
+            <a href="<?= ($eng === 1) ? $pageName : $pageName . '?eng' ?>"><?= ($eng === 1) ? 'Version française' : 'English version' ?></a>
         </div>
     </div>
 </footer>
