@@ -10,9 +10,9 @@ require_once "templates/head.php";
         <div class="container">
             <div class="offer__text d-flex">
                 <h1>
-                    <?= ($eng === 1) ? 'We are all in need <br> <span> of colors</span> ' : 'On a tous besoin <br> <span> de couleurs </span>' ?>
+                    <?= $eng ? 'We are all in need <br> <span> of colors</span> ' : 'On a tous besoin <br> <span> de couleurs </span>' ?>
                 </h1>
-                <a id="overlayed" href="#decouvrir"><?= ($eng === 1) ? 'Discover' : 'Découvrir' ?></a>
+                <a id="overlayed" href="#decouvrir"><?= $eng ? 'Discover' : 'Découvrir' ?></a>
             </div>
         </div>
     </section>
@@ -21,7 +21,7 @@ require_once "templates/head.php";
     <section id="history">
         <div class="container">
             <h2>
-                <?= ($eng === 1) ? 'History of the department' : 'Histoire du département' ?>
+                <?= $eng ? 'History of the department' : 'Histoire du département' ?>
             </h2>
             <div class="history__wrapper d-flex">
                 <img src="img/histoire01.jpg" alt="Panoramique sur Gordes">
@@ -29,25 +29,25 @@ require_once "templates/head.php";
                     <div class="history__date">
                         <h3>1789</h3>
                         <p>
-                            <?= ($eng === 1) ? 'French revolution: here it is!' : 'La Révolution Française est là !' ?>
+                            <?= $eng ? 'French revolution: here it is!' : 'La Révolution Française est là !' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>1790</h3>
                         <p>
-                            <?= ($eng === 1) ? 'Adoption of the decrees of the law of December 22, 1789 creating the departments' : 'Adoption des décrets de la loi du 22 décembre 1789 créant les départements' ?>
+                            <?= $eng ? 'Adoption of the decrees of the law of December 22, 1789 creating the departments' : 'Adoption des décrets de la loi du 22 décembre 1789 créant les départements' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>1791</h3>
                         <p>
-                            <?= ($eng === 1) ? 'Vote of the meeting of the Papal States in France' : 'Vote de la réunion des États pontificaux à la France' ?>
+                            <?= $eng ? 'Vote of the meeting of the Papal States in France' : 'Vote de la réunion des États pontificaux à la France' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>1793</h3>
                         <p>
-                            <?= ($eng === 1) ? 'Official birth of the Vaucluse Department' : 'Naissance officielle du département du Vaucluse' ?>
+                            <?= $eng ? 'Official birth of the Vaucluse Department' : 'Naissance officielle du département du Vaucluse' ?>
                         </p>
                     </div>
                 </div>
@@ -57,25 +57,25 @@ require_once "templates/head.php";
                     <div class="history__date">
                         <h3>1800</h3>
                         <p>
-                            <?= ($eng === 1) ? 'Each department is attributed a prefect' : 'Chaque département se voit doté d’un préfet' ?>
+                            <?= $eng ? 'Each department is attributed a prefect' : 'Chaque département se voit doté d’un préfet' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>1871</h3>
                         <p>
-                            <?= ($eng === 1) ? 'The department becomes a territorial collectivity' : 'Le département devient une collectivité territoriale' ?>
+                            <?= $eng ? 'The department becomes a territorial collectivity' : 'Le département devient une collectivité territoriale' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>1982-<br>2008</h3>
                         <p>
-                            <?= ($eng === 1) ? 'Decentralization laws grant unprecedented autonomy to departments and expand their powers' : 'Les lois de décentralisation accordent une autonomie sans précédent aux départements et élargissent leurs compétences' ?>
+                            <?= $eng ? 'Decentralization laws grant unprecedented autonomy to departments and expand their powers' : 'Les lois de décentralisation accordent une autonomie sans précédent aux départements et élargissent leurs compétences' ?>
                         </p>
                     </div>
                     <div class="history__date">
                         <h3>2015</h3>
                         <p>
-                            <?= ($eng === 1) ? 'The Departmental Council (and no longer the General Council) directs the Department' : 'Le Conseil départemental (et non plus le conseil général) dirige le Département' ?>
+                            <?= $eng ? 'The Departmental Council (and no longer the General Council) directs the Department' : 'Le Conseil départemental (et non plus le conseil général) dirige le Département' ?>
                         </p>
                     </div>
                 </div>
@@ -86,12 +86,12 @@ require_once "templates/head.php";
     <section id="geoposition">
         <div class="container">
             <h2>
-                <?= ($eng === 1) ? 'Where is the 84<sup style="font-size: 20px;">th</sup>  situated?' : 'Où se situe le 84 ?' ?>
+                <?= $eng ? 'Where is the 84<sup style="font-size: 20px;">th</sup>  situated?' : 'Où se situe le 84 ?' ?>
             </h2>
             <div class="geoposition__wrapper d-flex">
-                <img src="<?= ($eng === 1) ? 'img/en.carte4.png' : 'img/carte4.png' ?>" alt="Carte de France">
+                <img src="<?= $eng ? 'img/en.carte4.png' : 'img/carte4.png' ?>" alt="Carte de France">
                 <p>
-                    <?= ($eng === 1) ?
+                    <?= $eng ?
                         "The Vaucluse department is part of the Provence-Alpes-Côte d'Azur region, a region located in the south-east of France. It borders the departments of Gard in the west, Ardèche in the north-west, Drôme in the north, Alpes-de-Haute-Provence in the east, Var and Bouches-du-Rhône in the South. <br><br>
                         Vaucluse also has a part in the north, the canton of Valréas, entirely enclosed in the Drôme.<br><br> 
                         The department of Vaucluse is subject to different types of climates. Indeed, its particular geographical location places it at a meeting point between three of the four major climates of France: the Mediterranean climate for its southern part, the mountain climate for its north-eastern part with the high relief of the Monts de Vaucluse and the Massif des Baronnies and finally a very relative influence of the semi-continental climate for its north-western part.<br><br>
@@ -109,31 +109,31 @@ require_once "templates/head.php";
     <section id="decouvrir">
         <div class="container">
             <h2>
-                <?= ($eng === 1) ? 'Discover' : 'Découvrir' ?> Vaucluse
+                <?= $eng ? 'Discover' : 'Découvrir' ?> Vaucluse
             </h2>
             <div class="decouvrir__wrapper d-flex">
                 <a href="lieux.html">
                     <img src="img/decouvrir01.jpg" alt="Lieux incountournables">
                     <h3>
-                        <?= ($eng === 1) ? 'Places you should not miss' : 'Lieux incountournables' ?>
+                        <?= $eng ? 'Places you should not miss' : 'Lieux incountournables' ?>
                     </h3>
                 </a>
                 <a href="marches.html">
                     <img src="img/decouvrir02.jpg" alt="Marchés & foires">
                     <h3>
-                        <?= ($eng === 1) ? 'Local markets' : 'Marchés & foires' ?>
+                        <?= $eng ? 'Local markets' : 'Marchés & foires' ?>
                     </h3>
                 </a>
                 <a href="actualites.html">
                     <img src="img/decouvrir03.jpg" alt="Actualités">
                     <h3>
-                        <?= ($eng === 1) ? 'News' : 'Actualités' ?>
+                        <?= $eng ? 'News' : 'Actualités' ?>
                     </h3>
                 </a>
                 <a href="#history">
                     <img src="img/decouvrir04.jpg" alt="Histoire du département">
                     <h3>
-                        <?= ($eng === 1) ? 'History of the department' : 'Histoire du département' ?>
+                        <?= $eng ? 'History of the department' : 'Histoire du département' ?>
                     </h3>
                 </a>
             </div>

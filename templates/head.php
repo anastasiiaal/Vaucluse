@@ -1,8 +1,8 @@
 <?php 
 if(isset($_GET['eng'])) {
-    $eng = 1;
+    $eng = true;
 } else {
-    $eng = 0;
+    $eng = false;
 }
 
 $linkArray = strval($_SERVER['PHP_SELF']);
@@ -10,25 +10,25 @@ $linkArrayExplode = explode('/', $linkArray);
 $pageName = end($linkArrayExplode);
 
 if ($pageName == "index.php") {
-    if ($eng === 1) {
-        $pageTitle = "VAUCLUSE : we all need colors";
+    if ($eng) {
+        $pageTitle = "VAUCLUSE : we are all in need of colors";
     } else {
         $pageTitle = "VAUCLUSE : on a tous besoin de couleurs";
     }
 } else if ($pageName == "lieux.php") {
-    if ($eng === 1) {
+    if ($eng) {
         $pageTitle = "Landmarks of VAUCLUSE";
     } else {
         $pageTitle = "Lieux de VAUCLUSE";
     }
 } else if ($pageName == "marches.php") {
-    if ($eng === 1) {
+    if ($eng) {
         $pageTitle = "Markets of VAUCLUSE";
     } else {
         $pageTitle = "Marchés de VAUCLUSE";
     }
 } else if ($pageName == "actualites.php") {
-    if ($eng === 1) {
+    if ($eng) {
         $pageTitle = "News of VAUCLUSE";
     } else {
         $pageTitle = "Actualités de VAUCLUSE";
