@@ -30,83 +30,30 @@ overlay.addEventListener('click', () => {
 
 
 //*** actualites.html > read more button ***//
-
 const readmoreBtn = document.querySelectorAll('.readmore');
-const hidetextBtn = document.querySelectorAll('.hidetext');
 const readmoreDots = document.querySelectorAll('.dots');
 const readmoreTxt = document.querySelectorAll('.p-hidden');
-let arrayElem = [];
+let readText;
+let hideText;
 
+if (document.getElementById("read")) {
+    readText = document.getElementById("read").innerHTML;
+    hideText = document.getElementById("hide").innerHTML;
+}
 
 for (let i = 0; i < readmoreBtn.length; i++) {
-    arrayElem.push(readmoreBtn[i]);
     readmoreBtn[i].addEventListener('click', (e) => {
-        // console.log(arrayElem.indexOf(e.target));
         e.preventDefault();
-        readmoreDots[i].classList.add('hidden');
-        readmoreTxt[i].classList.remove('hidden');
-        hidetextBtn[i].classList.remove('hidden');
-        readmoreBtn[i].classList.add('hidden');
+        if(!readmoreBtn[i].classList.contains("displayed")) {
+            readmoreBtn[i].classList.add("displayed")
+            readmoreDots[i].classList.add('hidden');
+            readmoreTxt[i].classList.remove('hidden');
+            readmoreBtn[i].innerHTML = hideText;
+        } else {
+            readmoreBtn[i].classList.remove("displayed")
+            readmoreDots[i].classList.remove('hidden');
+            readmoreTxt[i].classList.add('hidden');
+            readmoreBtn[i].innerHTML = readText;
+        }
     });
 }
-
-
-for (let i = 0; i < hidetextBtn.length; i++) {
-    arrayElem.push(hidetextBtn[i]);
-    hidetextBtn[i].addEventListener('click', function(e){
-        // console.log(arrayElem.indexOf(e.target));
-        e.preventDefault();
-        readmoreDots[i].classList.remove('hidden');
-        readmoreTxt[i].classList.add('hidden');
-        hidetextBtn[i].classList.add('hidden');
-        readmoreBtn[i].classList.remove('hidden');
-    });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const testBtn = document.getElementById('test-btn');
-// const testDots = document.getElementById('test-dots');
-// const testPar = document.getElementById('test-p');
-
-// testBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     testDots.classList.toggle('hidden');
-//     testPar.classList.toggle('hidden');
-// });
-
-
-
-// readmoreBtn.forEach(e => {
-//     e.addEventListener
-// })
-
-
-
-
-
-
-
-
-
-

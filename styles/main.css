@@ -244,7 +244,7 @@ footer {
 /* header-offer */
 
 .index__cover {
-    background: center/cover no-repeat url("img/offer.jpg");
+    background: center/cover no-repeat url("../img/offer.jpg");
 }
 
 .offer__text {
@@ -362,7 +362,7 @@ footer {
 /* header */
 
 .lieux__cover {
-    background: center/cover no-repeat url("img/header-lieux.jpg");
+    background: center/cover no-repeat url("../img/header-lieux.jpg");
 }
 
 /* section lieux */
@@ -395,7 +395,7 @@ footer {
 /************* MARCHES.HTML *************/
 
 .marches__cover {
-    background: center/cover no-repeat url("img/header-marche.jpg");
+    background: center/cover no-repeat url("../img/header-marche.jpg");
 }
 
 /* section marches */
@@ -447,7 +447,7 @@ footer {
 /************* ACTUALITES.HTML *************/
 
 .actu__cover {
-    background: center/cover no-repeat url("img/header-actu.jpg");
+    background: center/cover no-repeat url("../img/header-actu.jpg");
 }
 
 /* section actualites */
