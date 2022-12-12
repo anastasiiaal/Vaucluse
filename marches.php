@@ -1,3 +1,4 @@
+<!-- yes, i do know that normally for such project one's using a DB and loops data but no i'm not doing it here thnx bye -->
 <?php
 require_once "templates/head.php";
 ?>
@@ -11,10 +12,26 @@ require_once "templates/head.php";
         $hours = "Opening hours:";
         $link = "See on map";
         $close = "closed";
+
+        $mo = "Monday";
+        $tu = "Tuesday";
+        $we = "Wednesday";
+        $th = "Thursday";
+        $fr = "Friday";
+        $sa = "Saturday";
+        $su = "Sunday";
     } else {
         $hours = "Les horaires d’ouverture :";
         $link = "Sur la carte";
         $close = "fermé";
+
+        $mo = "lundi";
+        $tu = "mardi";
+        $we = "mercredi";
+        $th = "jeudi";
+        $fr = "vendredi";
+        $sa = "samedi";
+        $su = "dimanche";
     }
     ?>
 
@@ -32,9 +49,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>lundi</li>
-                                        <li>mardi - vendredi</li>
-                                        <li>samedi - dimanche</li>
+                                        <li><?= $mo ?></li>
+                                        <li><?= $tu ?> - <?= $fr ?></li>
+                                        <li><?= $sa ?> - <?= $su ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
@@ -57,9 +74,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>jeudi, dimanche</li>
-                                        <li>lundi, mardi, mercredi</li>
-                                        <li>vendredi, samedi</li>
+                                        <li><?= $th ?>, <?= $su ?></li>
+                                        <li><?= $mo ?> - <?= $we ?></li>
+                                        <li><?= $fr ?>, <?= $sa ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
@@ -82,9 +99,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>dimanche - jeudi</li>
-                                        <li>vendredi</li>
-                                        <li>samedi</li>
+                                        <li><?= $su ?> - <?= $th ?></li>
+                                        <li><?= $fr ?></li>
+                                        <li><?= $sa ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
@@ -107,9 +124,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>lundi, mardi, jeudi</li>
-                                        <li>mercredi, vendredi</li>
-                                        <li>samedi, dimanche</li>
+                                        <li><?= $mo ?>, <?= $tu ?>, <?= $th ?></li>
+                                        <li><?= $we ?>, <?= $fr ?></li>
+                                        <li><?= $sa ?>, <?= $su ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
@@ -132,9 +149,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>jeudi</li>
-                                        <li>vendredi</li>
-                                        <li>samedi - mercredi</li>
+                                        <li><?= $th ?></li>
+                                        <li><?= $fr ?></li>
+                                        <li><?= $sa ?> - <?= $we ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
@@ -157,8 +174,8 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>mardi</li>
-                                        <li>samedi</li>
+                                        <li><?= $tu ?></li>
+                                        <li><?= $sa ?></li>
                                         <li>autres jours</li>
                                     </ul>
                                 </div>
@@ -182,9 +199,9 @@ require_once "templates/head.php";
                             <div class="open__wrapper">
                                 <div class="open__days">
                                     <ul>
-                                        <li>lundi</li>
-                                        <li>mardi</li>
-                                        <li>mercredi - dimanche</li>
+                                        <li><?= $mo ?></li>
+                                        <li><?= $tu ?></li>
+                                        <li><?= $we ?> - <?= $su ?></li>
                                     </ul>
                                 </div>
                                 <div class="open__hours">
